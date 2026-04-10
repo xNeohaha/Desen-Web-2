@@ -3,7 +3,7 @@ const input_nome = document.getElementById('nome'); // Input Nome
 const input_email = document.getElementById('email'); // Input Email
 const input_telefone = document.getElementById('telefone'); // Input  Telefone
 const input_cpf = document.getElementById('cpf'); // Input CPF
-const input_dataNascimento = document.getElementById('dataNascimento');
+const input_dataNascimento = document.getElementById('dataNascimento'); // Input DataNascimento
 const mensagem = document.getElementById('mensagem');
 
 form.addEventListener('submit', function (event) { //Se algum botão do Formulário com a tag "submit" for pressionado, executa.
@@ -15,7 +15,7 @@ form.addEventListener('submit', function (event) { //Se algum botão do Formulá
     email: input_email.value.trim(), // Email Formatado
     telefone: input_telefone.value.replace(/\D/g, ''), // Telefone Formatado
     cpf: input_cpf.value.replace(/\D/g, ''), // CPF Formatdo
-    dataNascimento: input_dataNascimento.value.trim() // Data Formatado
+    dataNascimento: input_dataNascimento.value.trim() // Data Nascimento Formatado
     };
     if (!data.nome || !data.email || !data.telefone || !data.cpf || !data.dataNascimento) { /// Verifica se os campos nome, email e telefone estão preenchidos
         mensagem.textContent = "Preencha todos os campos!";  // mensagens
